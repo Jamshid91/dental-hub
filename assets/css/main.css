@@ -283,7 +283,7 @@ input, textarea, select, button {
   top: 65%;
   background: #fff;
   z-index: 10;
-  padding: 30px 30px 2px 18px;
+  padding: 14px 30px 20px 18px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 596px;
@@ -295,7 +295,7 @@ input, textarea, select, button {
 .header-nav .item-box .item-info li {
   width: 50%;
   margin-right: 0;
-  margin-bottom: 16px;
+  margin-top: 16px;
   color: #5A6069;
 }
 .header-nav .item-box .item-info li a {
@@ -307,6 +307,13 @@ input, textarea, select, button {
 }
 .header-nav .item-box .item-info li:hover svg path {
   fill: #73C83F;
+}
+.header-nav .item-box .item-info li:last-child {
+  margin-top: 0;
+}
+.header-nav .item-box .item-info li:last-child:hover svg path {
+  fill: #fff;
+  stroke: #73C83F;
 }
 .header-nav .nav-social li {
   margin-right: 6px;
@@ -371,6 +378,7 @@ input, textarea, select, button {
 .menu .item-box .item-info {
   flex-direction: column;
   display: none;
+  padding-left: 20px;
 }
 .menu .item-box .item-info li {
   margin: 0;
@@ -559,6 +567,9 @@ main .block1 .registration-btn.stom:hover::before {
 main .block2 {
   margin: 75px 0;
 }
+main .block2 .title-text span {
+  text-transform: capitalize;
+}
 main .block2 .block2-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -570,7 +581,8 @@ main .block2 .block2-item {
   transition: 0.3s linear;
   border-radius: 20px;
   border-left: 5px solid transparent;
-  padding: 25px 22px;
+  padding: 25px 20px;
+  min-height: 222px;
 }
 main .block2 .block2-item a {
   z-index: 2;
@@ -582,8 +594,10 @@ main .block2 .block2-item .item-title {
   color: #275D36;
   margin: 20px 0 8px;
 }
-main .block2 .block2-item .title-text {
+main .block2 .block2-item .item-text {
   color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  line-height: 18px;
 }
 main .block2 .block2-item .arrow {
   width: 60px;
@@ -1215,7 +1229,7 @@ main .about-photo {
 }
 main .about-info {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   left: 40px;
 }
 main .about-info__title {
@@ -1237,8 +1251,8 @@ main .about-info-text {
   line-height: 19px;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 300;
-  width: 70%;
-  margin-top: 27px;
+  width: 60%;
+  margin-top: 25px;
 }
 main .about-info-text img {
   position: absolute;
@@ -1424,47 +1438,8 @@ main .company-block1 .swiper-company .swiper-company-pagination .swiper-paginati
 main .company-block1 .swiper-company .swiper-company-pagination .swiper-pagination-bullet-active {
   background-color: #275D36;
 }
-main .company {
-  background-image: url(../img/png/comp-shadow.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 50px;
-}
-main .company .company__img1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-main .company .company__img2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-main .company-btn {
-  width: 255px;
-  border-radius: 20px;
-  background: linear-gradient(180deg, #1E9E42 0%, #5BAB71 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(25px);
-  padding: 20px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  position: absolute;
-}
-main .company .btn1 {
-  left: 0;
-  bottom: 0;
-}
-main .company .btn2 {
-  top: 60px;
-  right: 0;
+main .block3-company {
+  margin-top: 45px;
 }
 main .block1-ser {
   margin-bottom: 0;
@@ -1854,7 +1829,7 @@ main .block6 .title-text {
   color: #004F16;
 }
 main .block6-address {
-  width: 70%;
+  width: 82%;
 }
 main .block6-address-info {
   color: rgb(94, 109, 109);
@@ -1866,8 +1841,8 @@ main .block6-address-info:nth-child(2) {
   margin: 0 20px;
 }
 main .block6-address-info p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
 }
 main .block6-address-info p strong {
   font-weight: 600;
@@ -2635,27 +2610,6 @@ main .block13 .info-text {
     font-size: 32px;
     line-height: 38px;
   }
-  main .company {
-    padding-bottom: 0;
-  }
-  main .company .company__img1 {
-    width: 250px;
-  }
-  main .company .company__img2 {
-    width: 250px;
-  }
-  main .company-btn {
-    width: 170px;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 15px 10px;
-  }
-  main .company .btn1 {
-    bottom: 50px;
-  }
-  main .company .btn2 {
-    top: 100px;
-  }
 }
 @media (max-width: 1199px) {
   main .block2 .block2-box {
@@ -2833,41 +2787,6 @@ main .block13 .info-text {
     left: 50%;
     transform: translateX(-50%);
     width: 97%;
-  }
-  main .company {
-    background: #fff;
-    padding-bottom: 100px;
-  }
-  main .company .container {
-    padding-right: 0;
-  }
-  main .company .about-box {
-    max-width: 100%;
-    overflow-x: scroll;
-    padding-bottom: 20px;
-  }
-  main .company .company__img1 {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  main .company .company__img2 {
-    position: absolute;
-    bottom: -70px;
-    z-index: 2;
-  }
-  main .company-btn {
-    width: 255px;
-    height: 58px;
-    position: relative;
-  }
-  main .company .btn1 {
-    left: 0;
-    bottom: 50px;
-    z-index: 2;
-  }
-  main .company .btn2 {
-    top: 10px;
-    right: 0;
   }
   main .prays {
     margin-top: 30px;
@@ -3551,6 +3470,9 @@ main .block13 .info-text {
   }
   main .block13 .btn:first-child {
     margin-right: 30px !important;
+  }
+  main .block3-company {
+    margin-top: 30px;
   }
   .footer-box {
     width: 50%;

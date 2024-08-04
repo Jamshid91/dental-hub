@@ -231,7 +231,7 @@ body {
         top: 65%;
         background: #fff;
         z-index: 10;
-        padding: 30px 30px 2px 18px;
+        padding: 14px 30px 20px 18px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 596px;
@@ -242,7 +242,7 @@ body {
         li {
           width: 50%;
           margin-right: 0;
-          margin-bottom: 16px;
+          margin-top: 16px;
           color: #5A6069;
           a {
             display: flex;
@@ -253,6 +253,13 @@ body {
           }
           &:hover svg path {
             fill: #73C83F;
+          }
+          &:last-child {
+            margin-top: 0;
+            &:hover svg path {
+              fill: #fff;
+              stroke: #73C83F;
+            }
           }
         }
       }
@@ -333,6 +340,7 @@ body {
       .item-info {
         flex-direction: column;
         display: none;
+        padding-left: 20px;
         li {
           margin: 0;
           margin-top: 12px;
@@ -531,6 +539,11 @@ body {
 
     .block2 {
       margin: 75px 0;
+      .title-text {
+        span {
+          text-transform: capitalize;
+        }
+      }
       .block2-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -542,7 +555,8 @@ body {
         transition: .3s linear;
         border-radius: 20px;
         border-left: 5px solid transparent;
-        padding: 25px 22px;
+        padding: 25px 20px;
+        min-height: 222px;
          a {
           z-index: 2;
          }
@@ -553,8 +567,10 @@ body {
           color: #275D36;
           margin: 20px 0 8px;
         }
-        .title-text {
+        .item-text {
           color: #00000099;
+          font-size: 15px;
+          line-height: 18px;
         }
 
         .arrow {
@@ -1205,7 +1221,7 @@ body {
       }
       &-info {
         position: absolute;
-        bottom: 60px;
+        bottom: 40px;
         left: 40px;
         &__title {
           font-family: 'PlayfairDisplay', sans-serif;
@@ -1226,8 +1242,8 @@ body {
           line-height: 19px;
           color: #0009;
           font-weight: 300;
-          width: 70%;
-          margin-top: 27px;
+          width: 60%;
+          margin-top: 25px;
           img {
             position: absolute;
             opacity: 0.8;
@@ -1426,47 +1442,8 @@ body {
       }
     }
 
-    .company {
-      background-image: url(../img/png/comp-shadow.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      padding-bottom: 50px;
-      .company__img1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .company__img2 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-      &-btn {
-        width: 255px;
-        border-radius: 20px;
-        background: linear-gradient(180deg, #1E9E42 0%, #5BAB71 100%);
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
-        backdrop-filter: blur(25px);
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        position: absolute;
-      }
-      .btn1 {
-        left: 0;
-        bottom: 0;
-      }
-      .btn2 {
-        top: 60px;
-        right: 0;
-      }
+    .block3-company {
+      margin-top: 45px;
     }
 
     .block1-ser {
@@ -1885,7 +1862,7 @@ body {
         color: #004F16;
       }
       &-address {   
-        width: 70%;     
+        width: 82%;     
         &-info {
           color: rgba(94, 109, 109, 1);
           img {
@@ -1895,8 +1872,8 @@ body {
             margin: 0 20px;
           }
           p {
-            font-size: 22px;
-            line-height: 26px;
+            font-size: 18px;
+            line-height: 21px;
             strong {
               font-weight: 600;
             }

@@ -1,5 +1,5 @@
 review = new Swiper('.reviews-page .swiper-reviews', {
-    loop: true,
+    loop: false,
     spaceBetween: 12,
     navigation: {
       nextEl: '.swiper-review-next',

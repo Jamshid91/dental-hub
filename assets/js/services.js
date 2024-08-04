@@ -16,12 +16,12 @@ services = new Swiper('.swiper-block2', {
         576: {
             slidesPerView: 1,
             grid: {
-                rows: 3,
+                rows: 2,
                 fill: 'row'
               },
         },
       991: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           grid: {
               rows: 3,
               fill: 'row'

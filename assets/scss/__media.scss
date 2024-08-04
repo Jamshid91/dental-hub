@@ -89,28 +89,6 @@
         }
       }
     }
-
-    .company {
-      padding-bottom: 0;
-      .company__img1 {
-        width: 250px;
-      }
-      .company__img2 {
-        width: 250px;
-      }
-      &-btn {
-        width: 170px;
-        font-size: 12px;
-        line-height: 14px;
-        padding: 15px 10px;
-      }
-      .btn1 {
-        bottom: 50px;
-      }
-      .btn2 {
-        top: 100px;
-      }
-    }
   }
   // END main
 }
@@ -309,41 +287,6 @@
       }
     }
 
-    .company {
-      background: #fff;
-      padding-bottom: 100px;
-      .container {
-        padding-right: 0;
-      }
-      .about-box {
-        max-width: 100%;
-        overflow-x: scroll;
-        padding-bottom: 20px;
-      }
-      .company__img1 {
-        position: relative;
-        margin-bottom: 20px;
-      }
-      .company__img2 {
-        position: absolute;
-        bottom: -70px;
-        z-index: 2;
-      }
-      &-btn {
-        width: 255px;
-        height: 58px;
-        position: relative;
-      }
-      .btn1 {
-        left: 0;
-        bottom: 50px;
-        z-index: 2;
-      }
-      .btn2 {
-        top: 10px;
-        right: 0;
-      }
-    }
 
     .prays {
       margin-top: 30px;
@@ -1133,6 +1076,10 @@
         margin-right: 30px !important;
       }
      }
+    }
+
+    .block3-company {
+      margin-top: 30px;
     }
   }
     // END main

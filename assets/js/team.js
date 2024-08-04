@@ -24,3 +24,14 @@ const team = new Swiper('.swiper-block3', {
         },
     }
   });
+
+
+  $(document).ready(function() {
+    // $('.prays-box').hide();
+    // $('.prays-box:first-child').show();
+    $('.sort-doc').click(function() {
+      let pageInfo = $(this).attr('data-sort');
+      $('.slide-doc').hide();
+      $('.' + pageInfo).show();
+    })
+  });
