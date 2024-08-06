@@ -2208,6 +2208,28 @@ body {
       }
     }
 
+    .block12-doc {
+      padding: 0 0 40px;
+      background-image: linear-gradient(to bottom, #ffffff, #feffff, #fdffff, #fbffff, #f9ffff);
+      max-width: 1392px;
+      margin: 80px auto 40px;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: url(../img/png/lines5.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .title-text {
+      padding: 0;
+      border: none;
+    }
+  }
+
     .block6-contact {
       padding: 115px 0 0;
     }
